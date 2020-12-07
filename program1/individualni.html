@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Individiualni program</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="shortcut icon" href="../slike/logo/teg.jpg">
+</head>
+<body>
+
+    <div class="header">
+        <div>
+            <div class="meni">
+                <button class="menibtn">MENI</button>
+                <div class="meniOpcije">
+                    <a href="../homepage/homepage.html">Početna strana</a>
+                    <a href="../program1/individualni.html">Individualni treninzi</a>
+                    <a href="../program2/grupni.html">Grupni treninzi</a>
+                </div>
+            </div>
+        </div>
+        <div class="logo">
+            <a href="../homepage/homepage.html">
+            <img src="../slike/logo/hercules.png" alt="Hercules" style="width:100%;">
+            </a>
+        </div>
+        <div></div>
+    </div>
+
+    <div class="idnaslov" >
+        <h1>-INDIVIDUALNI PROGRAMI TRENIRANJA-</h1>
+    </div>
+    <div style="background-color: rgb(200,200,200);">
+        <img src="../slike/polaznici/5.jpg" style="width:100%;">
+    </div>
+
+    <div style="text-align:center;padding: 2%;background: linear-gradient(to top, #ffffff 0%, rgb(200,200,200) 100%)">
+        <h1 style="font-size:2vw;">Zašto je dobro razmotriti individualno treniranje?</h1>
+    </div>
+
+    <div class="individual">
+        <div class="individualcolumn" style="background: linear-gradient(to bottom, #ffffff 0%, rgb(200,200,200) 100%)">
+            <p style="font-size:1.7vw;padding: 8% 10% 8% 10%">Ukoliko želite da izbegnete povrede i maksimalno iskoristite potencijal svoga tela za dostizanje cilja lični trener je najbolje rešenje. 
+            Bez obzira na to da li želite da izgubite na težini ili da steknete mišićnu masu, profesionalni lični trener može da proceni Vašu kondiciju i izgradi realističan plan za dostizanje željenih ciljeva.</p>
+        </div>
+        <div class="individualcolumn" style="background-color: rgb(200,200,200);">
+            <img src="../slike/polaznici/pt1.jpg" style="max-width:100%;height:auto;">
+        </div>
+    </div>
+
+    <div class="individual">
+        <div class="individualcolumn">
+            <img src="../slike/polaznici/pt2.jpg" style="max-width:100%;height:auto;">
+        </div>
+        <div class="individualcolumn" style="background: linear-gradient(to top, #ffffff 0%, rgb(200,200,200) 100%)">
+            <p style="font-size:1.7vw;padding: 7% 10% 7% 10%">Ozbiljan tim stručnih ličnih trenera ne oslanja se na puku odokativnu procenu kondicije, zdravljа, i mogućnosti klijenta. 
+            Pre izrade plana treninga, stručni treneri mere klijente, i testiraju im kondiciju. 
+            Mere se visina, težina, koncentracija mišića i visceralne masti, kao i BMI, КCAL, FAT.
+            Cilj je stručna, naučna procena mogućnosti svakog pојedinca, i individualno prilagođen trening u skladu sa datim informacijama.</p>
+        </div>
+    </div>
+
+    <div class="individual">
+        <div class="individualcolumn" style="background: linear-gradient(to bottom, #ffffff 0%, rgb(200,200,200) 100%)">
+            <p style="font-size:1.6vw;padding: 3% 10% 3% 10%">Lični trener radi sa Vama individualno, sa još jednim prijateljem ili partnerom, ili u grupi. 
+            Na Vama je da odlučite šta Vam više odgovara. Za vreme svakog treninga, trener posmatra da li ispravno radite vežbe iz plana koji je prethodno ugovoren, i daje Vam savete ukoliko nešto ne radite ispravno. 
+            Stručni lični trener je takođe tu da Vas motiviše i opusti, kako biste doživeli trening kao prijatno i uzbudljivo iskustvo.
+            Trener takođe daје osnovne savete o ishrani kojih bi trebalo da se pridržavate ukoliko želite da što brže i efikasnije dođete do željenih rezultata. 
+            Bez obzira na upornost tokom samih treninga, ispravna ishrana je najčešće nužni deo svakog treninga.</p>
+        </div>
+        <div class="individualcolumn" style="background-color: rgb(200,200,200);">
+            <img src="../slike/polaznici/pt3.jpg" style="max-width:100%;height:auto;">
+        </div>
+    </div>
+
+    <div class="individual">
+        <div class="individualcolumn" style="text-align:center;background: linear-gradient(to top, #ffffff 0%, rgb(200,200,200) 100%);">
+            <img src="../slike/bmi/bmi.png" style="max-width:100%;height:auto;">
+        </div>
+        <div class="individualcolumn" style="text-align: center;background: linear-gradient(to top, #ffffff 0%, rgb(200,200,200) 100%)">
+            <p style="font-size:2vw;padding: 11% 10% 4% 10%">Izračunajte Vaš BMI</p>
+            <form style="text-align:center;">
+                <label for="height" style="font-size:1.5vw;">Visina (u cm):</label><br>
+                <input type="number" id="height" style="text-align: center;font-size: 1.5vw;"><br>
+                <label for="weight" style="font-size: 1.5vw;">Težina (u kg):</label><br>
+                <input type="number" id="weight" style="text-align: center;font-size: 1.5vw;"><br><br>
+                <button type="button" onclick="izracunajBMI()" style="font-size:1.5vw;padding: 1% 3% 1% 3%;color:white; background-color: #cc0000;">BMI</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="log">
+        <p style="padding:2%;font-size:2vw;">Ako želite da počnete sa individualnim treninzima, prijavite se <a href="../prijava/prijava.html" a:link="color:#cc0000;" onclick="saveProgram('ind','../slike/polaznici/4.jpg')">ovde</a>, a mi ćemo Vas obavestiti o slobodnim terminima za konsultacije.</p>
+    </div>
+
+    <script>
+        function saveProgram(value,source){ //memorisanje vrednosti preko koje ćemo ispisati program na stranici prijave i ubaciti sliku
+            localStorage.setItem("program",value);
+            localStorage.setItem("slika",source);
+        }
+    </script>
+
+    <script>
+        function izracunajBMI() {
+            var h = parseInt(document.getElementById("height").value); //pretvaranje u integer onog što je ukucano u input-u kako bismo mogli da obavimo računanje
+            var w = parseInt(document.getElementById("weight").value);//pretvaranje u integer onog što je ukucano u input-u kako bismo mogli da obavimo računanje
+            if (h < 140 || h > 225 || h == null) { //uneti podaci moraju biti u intervalu koji je određen u okviru if naredbe
+                alert("Nepravilno uneti podaci"); //uneti podatak će svakako biti broj, pošto je u okviru forme naznačeno da je tip inputa number
+                return;
+            }
+            if( w < 30 || w > 200 || w == null) { //uneti podaci moraju biti u intervalu koji je određen u okviru if naredbe
+                alert("Nepravilno uneti podaci");
+                return;
+            } 
+            var bmi = w/((h/100) * (h/100)); //izračunat BMI
+            if (bmi < 18.5 && bmi > 0) { //ubacivanje BMI-a u odgovarajuću kategoriju
+                alert("BMI status: Underweight"); }
+                else if ( bmi > 18.5 && bmi < 25) {
+                    alert("BMI status: Normal"); }
+                    else if ( bmi > 25 && bmi < 30) {
+                        alert("BMI status: Overweight");}
+                        else if ( bmi > 30) {
+                            alert("BMI status: Obesity");}
+            }
+    </script>
+    
+
+
+
+
+    <div class="footer">
+        <div class="footercolumn">
+            <img src="../slike/foot/hercules.jpg" style="width:100%;">
+        </div>
+        <div class="footercolumn">
+            <img src="../slike/foot/hercules.jpg" style="width:100%;">
+        </div>
+        <div class="footercolumn">
+            <img src="../slike/foot/hercules.jpg" style="width:100%;">
+        </div>
+        <div class="footercolumn">
+            <img src="../slike/foot/hercules.jpg" style="width:100%;">
+        </div>
+        <div class="footercolumn">
+            <img src="../slike/foot/hercules.jpg" style="width:100%;">
+        </div>
+    </div>
+    
+</body>
+</html>

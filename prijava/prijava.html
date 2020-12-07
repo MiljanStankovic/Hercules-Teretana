@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prijava</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="shortcut icon" href="../slike/logo/teg.jpg">
+    <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" 
+         rel = "stylesheet"> <!--Jquery plugin za dizajn-->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script> <!--Jquery plugin-->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> <!--Jquery plugin-->
+</head>
+<body>
+
+    <div class="header">
+        <div>
+            <div class="meni">
+                <button class="menibtn">MENI</button>
+                <div class="meniOpcije">
+                    <a href="../homepage/homepage.html">Početna strana</a>
+                    <a href="../program1/individualni.html">Individualni treninzi</a>
+                    <a href="../program2/grupni.html">Grupni treninzi</a>
+                </div>
+            </div>
+        </div>
+        <div class="logo">
+            <a href="../homepage/homepage.html">
+            <img src="../slike/logo/hercules.png" alt="Hercules" style="width:100%;">
+            </a>
+        </div>
+        <div></div>
+    </div>
+
+    <div class="foto" style="background-color: rgb(200,200,200) ;">
+        <img id="picture" style="width:100%;height: auto;">
+    </div>
+    <div class="odabraniProgram" style="text-align: center; background-color: rgb(200,200,200);">
+        <h1 id="odabraniProgram" style="font-size: 3vw;padding: 2%;"></h1>
+    </div>
+
+    <div class="forma" style="text-align: center; background: linear-gradient(to bottom, rgb(200,200,200) 0%, white 100%);" >
+            <form class="form" id="form" action="../homepage/homepage.html" style="font-size: 1.5vw;" onsubmit="prijava()">
+                <label for="ime">Ime:</label><br>
+                <input type="text" id="ime" name="ime" size="50%" style="font-size: 1.5vw;" title="Molimo Vas, popunite ovo polje." required><br><br>
+                <label for="prezime">Prezime:</label><br>
+                <input type="text" id="prezime" name="prezime" size="50%" style="font-size: 1.5vw;" title="Molimo Vas, popunite ovo polje." required><br><br>
+                <label for="male">Pol:</label>
+                <input type="radio" id="male" name="gender" value="muski" checked>
+                <label for="male">Muški</label>
+                <input type="radio" id="female" name="gender" value="zenski">
+                <label for="female">Ženski</label><br><br>
+                <label for="mail">E-mail:</label><br>
+                <input type="email" id="mail" name="mail" size="50%" style="font-size: 1.5vw;" title="Ovo polje nam je neophodno kako bismo Vas najlakše obavestili o dostupnim terminima." required><br><br>
+                <label for="broj">Broj telefona:</label><br>
+                <input type="text" id="broj" name="broj" size="50%" style="font-size: 1.5vw;" pattern="([0-9])+(+){10,}" title="Ostavljanje broja telefona nije obavezno ali je preporučljivo, radi lakše komunikacije."><br><br>
+                <label for="termin">Koji termin konsultacija Vam najviše odgovara?</label><br>
+                <input type="date" id="termin" style="font-size:1.5vw;" title="Odaberite datum, a mi ćemo se potruditi da Vam obezbedimo konsultacije tog dana.
+                Ukoliko nema termina tog dana, poslaćemo Vam sve slobodne termine." required><br><br>
+                <input type="submit" value="Prijavi se*" id="submit" style="font-size:1.5vw; padding: 1% 2% 1% 2%;" >
+            </form>
+            <br><br>
+            <p style="font-size: 1vw;">*U najskorijem roku ćemo Vas obavestiti o slobodnim terminima za konsultacije u vezi programa koji ste odabrali.</p>
+    </div>
+
+    <script src="../script/javascript.js"></script>
+    
+    <div class="footer">
+        <div class="footercolumn">
+            <img src="../slike/foot/hercules.jpg" style="width:100%;">
+        </div>
+        <div class="footercolumn">
+            <img src="../slike/foot/hercules.jpg" style="width:100%;">
+        </div>
+        <div class="footercolumn">
+            <img src="../slike/foot/hercules.jpg" style="width:100%;">
+        </div>
+        <div class="footercolumn">
+            <img src="../slike/foot/hercules.jpg" style="width:100%;">
+        </div>
+        <div class="footercolumn">
+            <img src="../slike/foot/hercules.jpg" style="width:100%;">
+        </div>
+    </div>
+
+</body>
+</html>
